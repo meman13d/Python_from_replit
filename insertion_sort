@@ -1,0 +1,11 @@
+values = [19, 94, 73, 48, 21, 28, 20, 34, 70, 75]
+
+for i in range(0, len(values)):
+  current = values[i]
+  i2 = i
+  while i2>0 and values[i2-1]>current:
+    values[i2] = values[i2-1]
+    i2 = i2-1
+  values[i2] = current
+  print(values)
+print(values)
